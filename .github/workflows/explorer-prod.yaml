@@ -1,4 +1,4 @@
-name: Enable Explorer maintenance on PRD
+name: Enable Explorer maintenance on PROD
 on:
   workflow_dispatch:
 
