@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-TEMP_FILE=$(mktemp /tmp/maintenance_index.html.XXXXX)
+mkdir ./dist
+TEMP_FILE="dist/index.html"
 
 curl -sSL https://raw.githubusercontent.com/itconsultis/maintenance/master/index.html > $TEMP_FILE
 
@@ -25,4 +26,4 @@ elif [ -z "$NAME" ] && [ -z "$EMAIL" ]; then
 fi
 
 cat $TEMP_FILE
-rm -f $TEMP_FILE*
+rm -f $TEMP_FILE.bak
