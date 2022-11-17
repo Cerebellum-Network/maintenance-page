@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-mkdir ./dist
-TEMP_FILE="dist/index.html"
+mkdir ./build
+TEMP_FILE="build/index.html"
+
+printf "Yes\n" | apt install curl
 
 curl -sSL https://raw.githubusercontent.com/itconsultis/maintenance/master/index.html > $TEMP_FILE
 

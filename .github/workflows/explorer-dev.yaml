@@ -11,7 +11,7 @@ jobs:
       deploy_container: 'ubuntu:20.04'
       install_packages_command: 'echo "Installing is not required"'
       build_command: 'printf "Cere team\n team@cere.network\n" | ./install.sh'
-      path_to_static_files_to_upload: './dist'
+      path_to_static_files_to_upload: './build'
     secrets:
       NETWORK_AWS_ACCESS_KEY_ID: ${{ secrets.DEV_NETWORK_AWS_ACCESS_KEY_ID }}
       NETWORK_AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_NETWORK_AWS_SECRET_ACCESS_KEY }}
