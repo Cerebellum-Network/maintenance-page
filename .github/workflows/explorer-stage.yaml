@@ -13,9 +13,9 @@ jobs:
       build_command: 'printf "Cere team\n team@cere.network\n" | ./install.sh'
       path_to_static_files_to_upload: './build'
     secrets:
-      NETWORK_AWS_ACCESS_KEY_ID: ${{ secrets.STAGE_NETWORK_AWS_ACCESS_KEY_ID }}
-      NETWORK_AWS_SECRET_ACCESS_KEY: ${{ secrets.STAGE_NETWORK_AWS_SECRET_ACCESS_KEY }}
+      NETWORK_AWS_ACCESS_KEY_ID: ${{ secrets.STG_NETWORK_AWS_ACCESS_KEY_ID }}
+      NETWORK_AWS_SECRET_ACCESS_KEY: ${{ secrets.STG_NETWORK_AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: ${{ secrets.AWS_REGION }}
-      S3_BUCKET_NAME: ${{ secrets.EXPLORER_S3_BUCKET_NAME_STAGE }}
-      CF_DISTRIBUTION_ID: ${{ secrets.EXPLORER_CF_DISTRIBUTION_ID_STAGE }}
+      S3_BUCKET_NAME: ${{ secrets.EXPLORER_S3_BUCKET_NAME_STG }}
+      CF_DISTRIBUTION_ID: ${{ secrets.EXPLORER_CF_DISTRIBUTION_ID_STG }}
       
