@@ -10,7 +10,7 @@ jobs:
       build_container: 'node:14-buster-slim'
       deploy_container: 'ubuntu:20.04'
       install_packages_command: 'echo "Installing is not required"'
-      build_command: 'printf "Cere team\n team@cere.network\n" | ./install.sh'
+      build_command: 'printf "Cere Team\n team@cere.network\n" | ./install.sh'
       path_to_static_files_to_upload: './build'
     secrets:
       NETWORK_AWS_ACCESS_KEY_ID: ${{ secrets.DEV_NETWORK_AWS_ACCESS_KEY_ID }}

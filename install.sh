@@ -3,9 +3,7 @@
 mkdir ./build
 TEMP_FILE="build/index.html"
 
-printf "Yes\n" | apt install curl
-
-curl -sSL https://raw.githubusercontent.com/Cerebellum-Network/maintenance-page/master/index.html > $TEMP_FILE
+cat ./index.html > $TEMP_FILE
 
 echo -n "Name (optional): " 1>&2
 read NAME
