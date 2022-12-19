@@ -1,6 +1,8 @@
 # Maintenance
 
-This is a Cere maintenance page which can be setup and enabled for any UI application.
+This is a Cere maintenance page which can be setup and enabled for any UI application:
+
+![preview](https://raw.githubusercontent.com/Cerebellum-Network/maintenance-page/feature/add-readme/preview.jpg)
 
 ## Add an application to Github actions
 
